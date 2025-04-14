@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Form</title>
+  </head>
+  <body>
+    <div>
+      <h1>Input Data</h1>
+    </div>
+    <div>
+      <form action="" method="post" enctype="">
+        <!-- inputs -->
+        <p>
+          <label>Name:</label>
+          <input type="text" name="name" required placeholder="Deep Ghotane" />
+        </p>
+        <p>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="Email"
+            required
+            placeholder="i.e deep@gmail.com"
+          />
+        </p>
+        <p>
+          <label>Password:</label>
+          <input type="password" name="Password" placeholder="*******" />
+        </p>
+        <p>
+          <label>Phone:</label>
+          <input type="number" name="Phone" value="+61" />
+        </p>
+        <p>
+          <label>Date:</label>
+          <input type="date" name="Date" />
+          <input type="time" name="Time" />
+        </p>
+        <p>
+          <label for="">Attach your Resume</label>
+          <input type="file name" multiple value="Resume" />
+        </p>
+        <p>
+          <label for="">Gender</label>
+          <!-- group by same name to malke selection unique -->
+
+          <input type="radio" name="gender" id="m" /><label for="m">Male</label>
+          <!-- using id and for attribute to connect the data -->
+
+          <input type="radio" name="gender" id="f" />
+          <label for="">Female</label>
+          <input type="radio" name="gender" id="n" /><label for=""
+            >Others</label
+          >
+        </p>
+        <p>
+          <input type="checkbox" name="checkbox" id="" />
+          <label>Terms and Conditions</label>
+        </p>
+        <div>
+          <h4>Select your course</h4>
+          <!-- select field with single and multiple selection  -->
+          <!-- use multiple to select multi or no value to selsect just one -->
+          <select name="Course" id="" multiple>
+            <option value="">----Select--</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <h4>Type your story here.</h4>
+          <textarea name="text" name="" id="" rows="5" cols="30"> </textarea>
+        </div>
+        <p>
+          <input type="color" name="" id="" />
+        </p>
+        <p>
+          <input type="search" name="" id="" />
+        </p>
+        <p>
+          <input type="submit" name="" id="" />
+        </p>
+        <!-- one button only -->
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
